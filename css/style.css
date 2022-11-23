@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+header a{ 
+    text-decoration: none;
+}
+
+header a h1{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    width: 100%;
+    height: 25vh;
+    background-image: url(../img/título.jpg);
+    transition-property: font-size;
+    transition-duration: 2s;
+}
+
+header a h1:hover{
+    font-size: 72px;
+}
+
+
+.grid-contenedor{ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 150px 35px 850px 170px;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer"
+    ;
+}
+.encabezado{
+    grid-area: header;
+}
+
+.navegador{
+    grid-area: nav;
+    background-color: rgb(196, 157, 233);
+    border: 2px solid rgb(165,97,225);
+    
+}
+.navegador a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
+    
+}
+.navegador a:hover{
+    text-decoration: black;
+    text-shadow: 1px 0px 12px rgba(0,0,0,0.98);
+    font-size: 15px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenido{
+    grid-area: main;
+    background-color: #eee6f5;
+}
+
+.bienvenida{
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+    font-size: 18px;
+    color:black;
+}
+
+.productos{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-img-top{
+    width: 250px;
+    height: 420px;
+}
+div .card1,.card2,.card3,.card4{
+    border: 1px solid #000000;
+    border-radius: 3%;
+    background-color: white;
+}
+
+div .card1:hover{
+    box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+}
+div .card2:hover{
+    box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+}
+
+div .card3:hover{
+    box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+}
+
+div .card4:hover{
+    box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+}
+
+.carrito img{
+    width: 30px;
+    height: 30px;
+    transition: 1s;
+}
+
+.carrito img:hover{
+    width: 31px;
+    height: 31px;
+}
+
+/*.productos img{
+    width: 310px;
+    height: 430px;
+    padding: 5%;
+}
+
+div h3{
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+div h4{
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.productos div a{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    color: black;
+    font-weight: 80px;
+    text-decoration: none;
+    padding: 8px;
+}*/
+
+
+.pie{
+    grid-area: footer;
+    background-color:rgb(196, 157, 233) ;
+    border: 2px solid rgb(165,97,225);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.pie a img{ 
+    width: 50px;
+    height: 50px;
+    margin: 0px 0px 5px 15px;
+    
+} 
+
+.pie h3{
+    font-size: 15px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:768px) {
+    .grid-contenedor{ 
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 143.5px 35px 1450px 170px;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer"
+        ;
+    }
+
+
+
+    div .card1,.card2,.card3,.card4{
+        margin: 10px;
+    }
+    
+}
+
+
+/*@media screen and (max-width:768px) {
+
+    .encabezado{
+        width: 375px;
+        height: 100px;
+    }
+
+    header a h1{ 
+        font-size: 40px;
+        background-image: url(../img/título.jpg);
+        height: 100px;
+        width: 375px;
+        background-size: auto;
+    }
+
+    .grid-contenedor{ 
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 100px 110px 650px 100px;
+        grid-template-areas: 
+        "header hader"
+        "nav nav"
+        "main main"
+        "footer fo";
+    }
+
+    .productos{
+
+    }
+
+
+    .productos div{
+        width: 155px;
+        height: 275px;
+        padding: 0px;
+        border: 1px solid #000000;
+        box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+    }
+
+    .productos div img{
+        width: 150px;
+        height: 200px;
+    }
+
+    .productos div h2{
+        font-size: 16px;
+    }
+    .productos div h3{
+        font-size: 10px;
+    }
+
+    .productos div h4{
+        font-size: 10px;
+    }
+
+    .productos div a{
+        font-size: 10px;
+    }
+
+    .navegador a{
+        font-size: 11px;
+    }
+
+    .carrito img{
+        width: 25px;
+        height: 25px;
+    }
+    .navegador ul{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 5px;
+    }
+    
+    .bienvenida {
+        font-size: 11px;
+    }
+    .pie a img{
+        width: 25px;
+        height: 25px;
+    }
+    .pie h3{
+        font-size: 10px;
+    }
+}
+
+/*preguntar como achicar la imagen.
+como acomodar los div.
+como hacer para que quede un menu hamburguesa
+las redirecciones de las paginas*/
