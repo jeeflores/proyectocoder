@@ -124,6 +124,12 @@ div .card4:hover{
     -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
 }
 
+.card-title{
+    font-size: 15px;
+}
+.card-text {
+    font-size: 14px;
+}
 .carrito img{
     width: 30px;
     height: 30px;
@@ -188,6 +194,15 @@ div h4{
 }
 
 
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
 @media screen and (max-width:768px) {
     .grid-contenedor{ 
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -211,96 +226,26 @@ div h4{
 }
 
 
-/*@media screen and (max-width:768px) {
-
-    .encabezado{
-        width: 375px;
-        height: 100px;
-    }
-
-    header a h1{ 
-        font-size: 40px;
-        background-image: url(../img/título.jpg);
-        height: 100px;
-        width: 375px;
-        background-size: auto;
-    }
+@media screen and (max-width:375px){
 
     .grid-contenedor{ 
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         display: grid;
-        grid-template-columns: 2fr;
-        grid-template-rows: 100px 110px 650px 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 143.5px 130px 2500px 170px;
         grid-template-areas: 
-        "header hader"
-        "nav nav"
-        "main main"
-        "footer fo";
-    }
+        "header"
+        "nav"
+        "main"
+        "footer"
+        ;
+        }
 
-    .productos{
-
-    }
-
-
-    .productos div{
-        width: 155px;
-        height: 275px;
-        padding: 0px;
-        border: 1px solid #000000;
-        box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-    }
-
-    .productos div img{
-        width: 150px;
-        height: 200px;
-    }
-
-    .productos div h2{
-        font-size: 16px;
-    }
-    .productos div h3{
-        font-size: 10px;
-    }
-
-    .productos div h4{
-        font-size: 10px;
-    }
-
-    .productos div a{
-        font-size: 10px;
-    }
-
-    .navegador a{
-        font-size: 11px;
-    }
-
-    .carrito img{
-        width: 25px;
-        height: 25px;
-    }
-    .navegador ul{
+    .navegador ul {
         display: flex;
         flex-direction: column;
-        align-items:flex-start;
-        padding: 5px;
+        justify-content:center;
+        align-items: center;
+        padding-left: 0px;
     }
-    
-    .bienvenida {
-        font-size: 11px;
     }
-    .pie a img{
-        width: 25px;
-        height: 25px;
-    }
-    .pie h3{
-        font-size: 10px;
-    }
-}
-
-/*preguntar como achicar la imagen.
-como acomodar los div.
-como hacer para que quede un menu hamburguesa
-las redirecciones de las paginas*/
