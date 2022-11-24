@@ -202,6 +202,28 @@ div h4{
     
 }
 
+.iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.envios{
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+}
+
+.banco{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+}
+
+.MP{
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+}
 
 @media screen and (max-width:768px) {
     .grid-contenedor{ 
@@ -226,7 +248,7 @@ div h4{
 }
 
 
-@media screen and (max-width:375px){
+@media screen and (max-width:425px){
 
     .grid-contenedor{ 
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
