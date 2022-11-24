@@ -29,7 +29,7 @@ header a h1:hover{
 
 
 .grid-contenedor{ 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     display: grid;
     grid-template-columns: 4fr;
     grid-template-rows: 150px 35px 850px 170px;
@@ -51,6 +51,7 @@ header a h1:hover{
     
 }
 .navegador a {
+    font-family: 'Times New Roman', Times, serif;
     color: black;
     text-decoration: none;
     font-size: 14px;
@@ -77,6 +78,7 @@ ul {
 }
 
 .bienvenida{
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     margin: 3%;
@@ -184,8 +186,7 @@ div h4{
 .pie a img{ 
     width: 50px;
     height: 50px;
-    margin: 0px 0px 5px 15px;
-    
+    margin: 0px 0px 5px 15px; 
 } 
 
 .pie h3{
@@ -194,7 +195,7 @@ div h4{
 }
 
 .grid-contenedor2{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     display: grid;
     grid-template-columns: 4fr;
     grid-template-rows: 150px 35px 810px 170px;
@@ -268,7 +269,9 @@ div h4{
         ;
     }
 
-
+    .encabezado a h1{
+        font-size: 60px;
+    }
 
     div .card1,.card2,.card3,.card4{
         margin: 10px;
@@ -277,7 +280,7 @@ div h4{
 }
 
 .grid-contenedor2{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     display: grid;
     grid-template-columns: 4fr;
     grid-template-rows: 145px 35px 750px 170px;
@@ -292,7 +295,7 @@ div h4{
 @media screen and (max-width:425px){
 
     .grid-contenedor{ 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Times New Roman', Times, serif;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 143.5px 130px 2500px 170px;
@@ -311,10 +314,13 @@ div h4{
         align-items: center;
         padding-left: 0px;
     }
+    
+    .encabezado a h1{
+        font-size: 40px;
     }
 
     .grid-contenedor2{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Times New Roman', Times, serif;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 145px 130px 610px 170px;
@@ -351,3 +357,10 @@ div h4{
         height: 80px;
         margin: 25px;
     }
+
+    .pie a img{ 
+        width: 30px;
+        height: 30px;
+        margin: 0px 0px 5px 15px; 
+    }
+}
