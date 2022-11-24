@@ -143,34 +143,6 @@ div .card4:hover{
     height: 31px;
 }
 
-/*.productos img{
-    width: 310px;
-    height: 430px;
-    padding: 5%;
-}
-
-div h3{
-    display: flex;
-    justify-content: center;
-    font-size: small;
-}
-div h4{
-    display: flex;
-    justify-content: center;
-    font-size: small;
-}
-
-.productos div a{
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-    color: black;
-    font-weight: 80px;
-    text-decoration: none;
-    padding: 8px;
-}*/
-
-
 .pie{
     grid-area: footer;
     background-color:rgb(196, 157, 233) ;
@@ -273,11 +245,13 @@ div h4{
         font-size: 60px;
     }
 
+    .encabezado a h1:hover{
+        font-size: 63px;
+    }
+
     div .card1,.card2,.card3,.card4{
         margin: 10px;
     }
-    
-}
 
 .grid-contenedor2{
     font-family: 'Times New Roman', Times, serif;
@@ -288,7 +262,7 @@ div h4{
     "header header header header"
     "nav nav nav nav"
     "main main main main"
-    "footer footer footer footer"
+    "footer footer footer footer"}
 }
 
 
@@ -317,6 +291,10 @@ div h4{
     
     .encabezado a h1{
         font-size: 40px;
+    }
+
+    .encabezado a h1:hover{
+        font-size: 45px;
     }
 
     .grid-contenedor2{
