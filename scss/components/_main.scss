@@ -1,0 +1,40 @@
+.contenido {
+    grid-area: main;
+    background-color: #eee6f5;
+    .bienvenida{
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        justify-content: center;
+        margin: 3%;
+        font-size: 18px;
+        color:black;
+    }
+    .productos{
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        flex-wrap: wrap;
+        .card1,.card2,.card3,.card4{
+            border: 1px solid #000000;
+            border-radius: 3%;
+            background-color: white;
+            .card-img-top{
+                width: 250px;
+                height: 420px;
+            &:hover{
+                -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+                box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+            }
+            }
+            div{
+                .card-title{
+                    font-size: 15px;
+                }
+                .card-text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

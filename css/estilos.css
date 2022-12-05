@@ -39,6 +39,37 @@ header a {
     header a h1:hover {
       font-size: 72px; }
 
+.contenido {
+  grid-area: main;
+  background-color: #eee6f5; }
+  .contenido .bienvenida {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+    font-size: 18px;
+    color: black; }
+  .contenido .productos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .contenido .productos .card1, .contenido .productos .card2, .contenido .productos .card3, .contenido .productos .card4 {
+      border: 1px solid #000000;
+      border-radius: 3%;
+      background-color: white; }
+      .contenido .productos .card1 .card-img-top, .contenido .productos .card2 .card-img-top, .contenido .productos .card3 .card-img-top, .contenido .productos .card4 .card-img-top {
+        width: 250px;
+        height: 420px; }
+        .contenido .productos .card1 .card-img-top:hover, .contenido .productos .card2 .card-img-top:hover, .contenido .productos .card3 .card-img-top:hover, .contenido .productos .card4 .card-img-top:hover {
+          -moz-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75); }
+      .contenido .productos .card1 div .card-title, .contenido .productos .card2 div .card-title, .contenido .productos .card3 div .card-title, .contenido .productos .card4 div .card-title {
+        font-size: 15px; }
+      .contenido .productos .card1 div .card-text, .contenido .productos .card2 div .card-text, .contenido .productos .card3 div .card-text, .contenido .productos .card4 div .card-text {
+        font-size: 14px; }
+
 .navegador {
   grid-area: nav;
   background-color: #c49de9;
