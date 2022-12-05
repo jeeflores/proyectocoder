@@ -71,6 +71,18 @@ ul {
     align-items: center;
 }
 
+.carrito img{
+    width: 30px;
+    height: 30px;
+    transition: 1s;
+}
+
+.carrito img:hover{
+    width: 31px;
+    height: 31px;
+}
+
+
 .contenido{
     grid-area: main;
     background-color: #eee6f5;
@@ -130,16 +142,6 @@ div .card4:hover{
 }
 .card-text {
     font-size: 14px;
-}
-.carrito img{
-    width: 30px;
-    height: 30px;
-    transition: 1s;
-}
-
-.carrito img:hover{
-    width: 31px;
-    height: 31px;
 }
 
 .pie{

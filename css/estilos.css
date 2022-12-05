@@ -21,6 +21,22 @@
   grid-template-rows: 150px 35px 810px 170px;
   grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer"; }
 
+.pie {
+  grid-area: footer;
+  background-color: #c49de9;
+  border: 2px solid #a561e1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .pie a img {
+    width: 50px;
+    height: 50px;
+    margin: 0px 0px 5px 15px; }
+  .pie h3 {
+    font-size: 15px;
+    text-align: center; }
+
 header a {
   text-decoration: none; }
   header a h1 {
