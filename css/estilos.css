@@ -11,9 +11,6 @@
   grid-template-rows: 150px 35px 850px 170px;
   grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer"; }
 
-.encabezado {
-  grid-area: header; }
-
 .grid-contenedor2 {
   font-family: 'Times New Roman', Times, serif;
   display: grid;
@@ -61,6 +58,10 @@
     font-size: 40px; }
     .encabezado a h1:hover {
       font-size: 45px; }
+  .pie a img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px 5px 15px; }
   .grid-contenedor2 {
     font-family: 'Times New Roman', Times, serif;
     display: grid;
@@ -83,11 +84,7 @@
   .MP {
     width: 80px;
     height: 80px;
-    margin: 25px; }
-  .pie a img {
-    width: 30px;
-    height: 30px;
-    margin: 0px 0px 5px 15px; } }
+    margin: 25px; } }
 
 .pie {
   grid-area: footer;
@@ -105,23 +102,25 @@
     font-size: 15px;
     text-align: center; }
 
-.encabezado a {
-  text-decoration: none; }
-  .encabezado a h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 70px;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
-    width: 100%;
-    height: 25vh;
-    background-image: url(../img/título.jpg);
-    transition-property: font-size;
-    transition-duration: 2s; }
-    .encabezado a h1:hover {
-      font-size: 72px; }
+.encabezado {
+  grid-area: header; }
+  .encabezado a {
+    text-decoration: none; }
+    .encabezado a h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-size: 70px;
+      font-family: 'Times New Roman', Times, serif;
+      text-decoration: none;
+      width: 100%;
+      height: 25vh;
+      background-image: url(../img/título.jpg);
+      transition-property: font-size;
+      transition-duration: 2s; }
+      .encabezado a h1:hover {
+        font-size: 72px; }
 
 .contenido {
   grid-area: main;
@@ -154,14 +153,14 @@
       .contenido .productos .card1 div .card-text, .contenido .productos .card2 div .card-text, .contenido .productos .card3 div .card-text, .contenido .productos .card4 div .card-text {
         font-size: 14px; }
 
-.acordion-e-iconos .acordion {
+.acordion-e-iconos .accordion {
   display: flex;
   flex-direction: column;
   justify-content: center;
   grid-area: acordion; }
-  .acordion-e-iconos .acordion .acordion-item .acordion-header {
+  .acordion-e-iconos .accordion .accordion-item .accordion-header {
     margin: 6px; }
-    .acordion-e-iconos .acordion .acordion-item .acordion-header:hover {
+    .acordion-e-iconos .accordion .accordion-item .accordion-header:hover {
       -moz-box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.75);
       -webkit-box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.75);
       box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.75); }

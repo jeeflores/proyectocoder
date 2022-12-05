@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
 
 header a{ 
     text-decoration: none;
@@ -173,7 +177,7 @@ div .card4:hover{
     "nav nav nav nav"
     "main main main main"
     "footer footer footer footer"
-}/**listo**/
+}
 .acordion-e-iconos{
     display: grid;
     grid-template-columns: 4fr;
