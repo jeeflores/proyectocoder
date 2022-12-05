@@ -1,0 +1,118 @@
+@media screen and (max-width:768px) {
+
+    .grid-contenedor {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 143.5px 35px 1450px 170px;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "footer footer"
+        ;
+    }
+
+    .encabezado a h1 {
+        font-size: 60px;
+
+        &:hover {
+            font-size: 63px;
+        }
+    }
+
+    .contenido .productos .card1,
+    .contenido .productos .card2,
+    .contenido .productos .card3,
+    .contenido .productos .card4 {
+        margin: 10px;
+    }
+
+    .grid-contenedor2 {
+        font-family: 'Times New Roman', Times, serif;
+        display: grid;
+        grid-template-columns: 4fr;
+        grid-template-rows: 145px 35px 750px 170px;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "main main main main"
+            "footer footer footer footer"
+    }
+}
+
+
+@media screen and (max-width:425px) {
+
+    .grid-contenedor {
+        font-family: 'Times New Roman', Times, serif;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 143.5px 130px 2500px 170px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer"
+        ;
+    }
+
+    .navegador ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .encabezado a h1 {
+        font-size: 40px;
+        &:hover{
+            font-size: 45px;
+        }
+    }
+
+    .grid-contenedor2 {
+        font-family: 'Times New Roman', Times, serif;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 145px 130px 610px 170px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer"
+    }
+    .acordion-e-iconos {
+        display: grid;
+        grid-template-columns: 4fr;
+        grid-template-rows: 460px 150px;
+        grid-template-areas:
+            "acordion acordion acordion acordion"
+            " section section section section";
+    }
+
+    .envios {
+        width: 80px;
+        height: 80px;
+        margin: 25px;
+    }
+
+    .banco {
+        width: 40px;
+        height: 40px;
+        margin: 25px;
+    }
+
+    .MP {
+        width: 80px;
+        height: 80px;
+        margin: 25px;
+    }
+
+    .pie a img {
+        width: 30px;
+        height: 30px;
+        margin: 0px 0px 5px 15px;
+    }
+}

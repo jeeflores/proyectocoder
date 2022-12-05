@@ -21,6 +21,74 @@
   grid-template-rows: 150px 35px 810px 170px;
   grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer"; }
 
+@media screen and (max-width: 768px) {
+  .grid-contenedor {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 143.5px 35px 1450px 170px;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
+  .encabezado a h1 {
+    font-size: 60px; }
+    .encabezado a h1:hover {
+      font-size: 63px; }
+  .contenido .productos .card1,
+  .contenido .productos .card2,
+  .contenido .productos .card3,
+  .contenido .productos .card4 {
+    margin: 10px; }
+  .grid-contenedor2 {
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 145px 35px 750px 170px;
+    grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer"; } }
+
+@media screen and (max-width: 425px) {
+  .grid-contenedor {
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 143.5px 130px 2500px 170px;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  .navegador ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px; }
+  .encabezado a h1 {
+    font-size: 40px; }
+    .encabezado a h1:hover {
+      font-size: 45px; }
+  .grid-contenedor2 {
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 145px 130px 610px 170px;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  .acordion-e-iconos {
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 460px 150px;
+    grid-template-areas: "acordion acordion acordion acordion" " section section section section"; }
+  .envios {
+    width: 80px;
+    height: 80px;
+    margin: 25px; }
+  .banco {
+    width: 40px;
+    height: 40px;
+    margin: 25px; }
+  .MP {
+    width: 80px;
+    height: 80px;
+    margin: 25px; }
+  .pie a img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px 5px 15px; } }
+
 .pie {
   grid-area: footer;
   background-color: #c49de9;
@@ -37,9 +105,9 @@
     font-size: 15px;
     text-align: center; }
 
-header a {
+.encabezado a {
   text-decoration: none; }
-  header a h1 {
+  .encabezado a h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +120,7 @@ header a {
     background-image: url(../img/título.jpg);
     transition-property: font-size;
     transition-duration: 2s; }
-    header a h1:hover {
+    .encabezado a h1:hover {
       font-size: 72px; }
 
 .contenido {
@@ -75,16 +143,46 @@ header a {
       border-radius: 3%;
       background-color: white; }
       .contenido .productos .card1 .card-img-top, .contenido .productos .card2 .card-img-top, .contenido .productos .card3 .card-img-top, .contenido .productos .card4 .card-img-top {
-        width: 250px;
+        width: 280px;
         height: 420px; }
-        .contenido .productos .card1 .card-img-top:hover, .contenido .productos .card2 .card-img-top:hover, .contenido .productos .card3 .card-img-top:hover, .contenido .productos .card4 .card-img-top:hover {
-          -moz-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
-          -webkit-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75); }
+      .contenido .productos .card1:hover, .contenido .productos .card2:hover, .contenido .productos .card3:hover, .contenido .productos .card4:hover {
+        -moz-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75); }
       .contenido .productos .card1 div .card-title, .contenido .productos .card2 div .card-title, .contenido .productos .card3 div .card-title, .contenido .productos .card4 div .card-title {
         font-size: 15px; }
       .contenido .productos .card1 div .card-text, .contenido .productos .card2 div .card-text, .contenido .productos .card3 div .card-text, .contenido .productos .card4 div .card-text {
         font-size: 14px; }
+
+.acordion-e-iconos .acordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: acordion; }
+  .acordion-e-iconos .acordion .acordion-item .acordion-header {
+    margin: 6px; }
+    .acordion-e-iconos .acordion .acordion-item .acordion-header:hover {
+      -moz-box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.75);
+      box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.75); }
+
+.iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: section; }
+  .iconos .envios {
+    width: 150px;
+    height: 150px;
+    margin: 25px; }
+  .iconos .banco {
+    width: 100px;
+    height: 100px;
+    margin: 25px; }
+  .iconos .MP {
+    width: 150px;
+    height: 150px;
+    margin: 25px; }
 
 .navegador {
   grid-area: nav;

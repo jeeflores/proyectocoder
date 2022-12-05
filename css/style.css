@@ -1,12 +1,8 @@
-/*{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-}
+
 
 header a{ 
     text-decoration: none;
-}
+} /**listo**/
 
 header a h1{ 
     display: flex;
@@ -21,11 +17,11 @@ header a h1{
     background-image: url(../img/título.jpg);
     transition-property: font-size;
     transition-duration: 2s;
-}
+} /**listo**/
 
 header a h1:hover{
     font-size: 72px;
-}
+}/**listo**/
 
 
 .grid-contenedor{ 
@@ -38,17 +34,17 @@ header a h1:hover{
     "nav nav nav nav"
     "main main main main"
     "footer footer footer footer";
-}
+}/**listo**/
 .encabezado{
     grid-area: header;
-}*/
+}/**listo**/
 
 .navegador{
     grid-area: nav;
     background-color: rgb(196, 157, 233);
     border: 2px solid rgb(165,97,225);
     
-}
+}/**listo**/
 .navegador a {
     font-family: 'Times New Roman', Times, serif;
     color: black;
@@ -56,12 +52,12 @@ header a h1:hover{
     font-size: 14px;
     transition: 0.5s ease-in-out;
     
-}
+}/**listo**/
 .navegador a:hover{
     text-decoration: black;
     text-shadow: 1px 0px 12px rgba(0,0,0,0.98);
     font-size: 15px;
-}
+}/**listo**/
 
 ul {
     list-style: none;
@@ -69,24 +65,24 @@ ul {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-}
+}/**listo**/
 
 .carrito img{
     width: 30px;
     height: 30px;
     transition: 1s;
-}
+}/**listo**/
 
 .carrito img:hover{
     width: 31px;
     height: 31px;
-}
+}/**listo**/
 
 
 .contenido{
     grid-area: main;
     background-color: #eee6f5;
-}
+}/**listo**/
 
 .bienvenida{
     font-family: 'Times New Roman', Times, serif;
@@ -95,54 +91,54 @@ ul {
     margin: 3%;
     font-size: 18px;
     color:black;
-}
+}/**listo**/
 
 .productos{
     display: flex;
     justify-content: space-around; 
     align-items: center;
     flex-wrap: wrap;
-}
+}/**listo**/
 
 .card-img-top{
     width: 250px;
     height: 420px;
-}
+}/**listo**/
 div .card1,.card2,.card3,.card4{
     border: 1px solid #000000;
     border-radius: 3%;
     background-color: white;
-}
+}/**listo**/
 
 div .card1:hover{
     -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-}
+}/**listo**/
 div .card2:hover{
     -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-}
+}/**listo**/
 
 div .card3:hover{
     -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-}
+}/**listo**/
 
 div .card4:hover{
     -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-}
+}/**listo**/
 
 .card-title{
     font-size: 15px;
-}
+}/**listo**/
 .card-text {
     font-size: 14px;
-}
+}/**listo**/
 
 .pie{
     grid-area: footer;
@@ -153,19 +149,19 @@ div .card4:hover{
     flex-direction: column;
     justify-content: center;
     
-}
+}/**listo**/
 
 
 .pie a img{ 
     width: 50px;
     height: 50px;
     margin: 0px 0px 5px 15px; 
-} 
+} /**listo**/
 
 .pie h3{
     font-size: 15px;
     text-align: center;
-}
+}/**listo**/
 
 .grid-contenedor2{
     font-family: 'Times New Roman', Times, serif;
@@ -177,7 +173,7 @@ div .card4:hover{
     "nav nav nav nav"
     "main main main main"
     "footer footer footer footer"
-}
+}/**listo**/
 .acordion-e-iconos{
     display: grid;
     grid-template-columns: 4fr;
@@ -264,7 +260,7 @@ div .card4:hover{
     "nav nav nav nav"
     "main main main main"
     "footer footer footer footer"}
-}
+}/**listo**/
 
 
 @media screen and (max-width:425px){
