@@ -28,3 +28,15 @@
     "main main main main"
     "footer footer footer footer"
 }
+
+.grid-productos{
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 150px 35px 1300px 170px;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer"
+}

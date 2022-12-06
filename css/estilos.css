@@ -18,6 +18,13 @@
   grid-template-rows: 150px 35px 810px 170px;
   grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer"; }
 
+.grid-productos {
+  font-family: 'Times New Roman', Times, serif;
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-template-rows: 150px 35px 1300px 170px;
+  grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer"; }
+
 @media screen and (max-width: 768px) {
   .grid-contenedor {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -182,6 +189,165 @@
     width: 150px;
     height: 150px;
     margin: 25px; }
+
+.tarjeta {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #eee6f5; }
+  .tarjeta .tarj1 {
+    width: 270px;
+    height: 560px;
+    border: 1px solid #000000;
+    border-radius: 3%;
+    background-color: white; }
+    .tarjeta .tarj1:hover {
+      -moz-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75); }
+    .tarjeta .tarj1 .card-img-top {
+      width: 250px;
+      height: 420px;
+      margin: 10px 0px 0px 0px;
+      border-radius: 3%; }
+    .tarjeta .tarj1 .card-body .card-title {
+      font-size: 15px; }
+    .tarjeta .tarj1 .card-body .card-text {
+      font-size: 14px; }
+  .tarjeta .tarj2 {
+    width: 270px;
+    height: 560px;
+    border: 1px solid #000000;
+    border-radius: 3%;
+    background-color: white; }
+    .tarjeta .tarj2:hover {
+      -moz-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75); }
+    .tarjeta .tarj2 .card-img-top {
+      width: 250px;
+      height: 420px;
+      margin: 10px 0px 0px 0px;
+      border-radius: 3%; }
+    .tarjeta .tarj2 .card-body .card-title {
+      font-size: 15px; }
+    .tarjeta .tarj2 .card-body .card-text {
+      font-size: 14px; }
+  .tarjeta .tarj3 {
+    width: 270px;
+    height: 560px;
+    border: 1px solid #000000;
+    border-radius: 3%;
+    background-color: white; }
+    .tarjeta .tarj3:hover {
+      -moz-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75); }
+    .tarjeta .tarj3 .card-img-top {
+      width: 250px;
+      height: 420px;
+      margin: 10px 0px 0px 0px;
+      border-radius: 3%; }
+    .tarjeta .tarj3 .card-body .card-title {
+      font-size: 15px; }
+    .tarjeta .tarj3 .card-body .card-text {
+      font-size: 14px; }
+  .tarjeta .tarj4 {
+    width: 270px;
+    height: 560px;
+    border: 1px solid #000000;
+    border-radius: 3%;
+    background-color: white; }
+    .tarjeta .tarj4:hover {
+      -moz-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75); }
+    .tarjeta .tarj4 .card-img-top {
+      width: 250px;
+      height: 420px;
+      margin: 10px 0px 0px 0px;
+      border-radius: 3%; }
+    .tarjeta .tarj4 .card-body .card-title {
+      font-size: 15px; }
+    .tarjeta .tarj4 .card-body .card-text {
+      font-size: 14px; }
+  .tarjeta .tarj5 {
+    width: 270px;
+    height: 560px;
+    border: 1px solid #000000;
+    border-radius: 3%;
+    background-color: white; }
+    .tarjeta .tarj5:hover {
+      -moz-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75); }
+    .tarjeta .tarj5 .card-img-top {
+      width: 250px;
+      height: 420px;
+      margin: 10px 0px 0px 0px;
+      border-radius: 3%; }
+    .tarjeta .tarj5 .card-body .card-title {
+      font-size: 15px; }
+    .tarjeta .tarj5 .card-body .card-text {
+      font-size: 14px; }
+  .tarjeta .tarj6 {
+    width: 270px;
+    height: 560px;
+    border: 1px solid #000000;
+    border-radius: 3%;
+    background-color: white; }
+    .tarjeta .tarj6:hover {
+      -moz-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75); }
+    .tarjeta .tarj6 .card-img-top {
+      width: 250px;
+      height: 420px;
+      margin: 10px 0px 0px 0px;
+      border-radius: 3%; }
+    .tarjeta .tarj6 .card-body .card-title {
+      font-size: 15px; }
+    .tarjeta .tarj6 .card-body .card-text {
+      font-size: 14px; }
+  .tarjeta .tarj7 {
+    width: 270px;
+    height: 560px;
+    border: 1px solid #000000;
+    border-radius: 3%;
+    background-color: white; }
+    .tarjeta .tarj7:hover {
+      -moz-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75); }
+    .tarjeta .tarj7 .card-img-top {
+      width: 250px;
+      height: 420px;
+      margin: 10px 0px 0px 0px;
+      border-radius: 3%; }
+    .tarjeta .tarj7 .card-body .card-title {
+      font-size: 15px; }
+    .tarjeta .tarj7 .card-body .card-text {
+      font-size: 14px; }
+  .tarjeta .tarj8 {
+    width: 270px;
+    height: 560px;
+    border: 1px solid #000000;
+    border-radius: 3%;
+    background-color: white; }
+    .tarjeta .tarj8:hover {
+      -moz-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 2px 2px 21px 0px rgba(0, 0, 0, 0.75); }
+    .tarjeta .tarj8 .card-img-top {
+      width: 250px;
+      height: 420px;
+      margin: 10px 0px 0px 0px;
+      border-radius: 3%; }
+    .tarjeta .tarj8 .card-body .card-title {
+      font-size: 15px; }
+    .tarjeta .tarj8 .card-body .card-text {
+      font-size: 14px; }
 
 .navegador {
   grid-area: nav;
