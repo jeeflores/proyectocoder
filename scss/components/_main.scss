@@ -1,8 +1,11 @@
+@import "../base/variables";
+
+
 .contenido {
     grid-area: main;
-    background-color: #eee6f5;
+    background-color: $fondo-main;
     .bienvenida{
-        font-family: 'Times New Roman', Times, serif;
+        font-family: $fuente-principal;
         display: flex;
         justify-content: center;
         margin: 3%;
@@ -10,29 +13,28 @@
         color:black;
     }
     .productos{
-        display: flex;
-        justify-content: space-around; 
-        align-items: center;
+        @include flex( flex,space-around,center);
         flex-wrap: wrap;
         .card1,.card2,.card3,.card4{
             border: 1px solid #000000;
             border-radius: 3%;
-            background-color: white;
-            .card-img-top{
-                width: 280px;
-                height: 420px;
-                }
+            background-color: white;            
             &:hover{
                 -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
                 -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
                 box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
                 }
+            .card-img-top{
+                width: 280px;
+                height: 420px;
+                border-radius: 3%;
+                }
             div{
                 .card-title{
-                    font-size: 15px;
+                    font-size: $producto;
                 }
                 .card-text {
-                    font-size: 14px;
+                    font-size: $precio;
                 }
             }
         }
@@ -59,9 +61,7 @@
 }
 
 .iconos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex,center,center);
     grid-area: section;
     .envios{
         width: 150px;
@@ -81,217 +81,120 @@
 }
 
 .tarjeta{
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
+    @include flex(flex, space-around, center);
     flex-wrap: wrap;
-    background-color: #eee6f5;
+    background-color: $fondo-main;
     .tarj1{
-        width:270px;
-        height: 560px;
-        border: 1px solid #000000;
-        border-radius: 3%;
-        background-color: white;
-        &:hover{
-            -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+        @extend %borde-tarjeta;        
         }
         .card-img-top{
-            width: 250px;
-            height: 420px;
-            margin: 10px 0px 0px 0px;
-            border-radius: 3%;
+            @extend %img-etiqueta;
         }
         .card-body{
             .card-title{
-                font-size: 15px;
+                font-size: $producto;
             }
             .card-text{
-                font-size: 14px;
+                font-size: $precio;
             }
         }
     }
     .tarj2{
-        width:270px;
-        height: 560px;
-        border: 1px solid #000000;
-        border-radius: 3%;
-        background-color: white;
-        &:hover{
-            -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-        }
+        @extend %borde-tarjeta;
         .card-img-top{
-            width: 250px;
-            height: 420px;
-            margin: 10px 0px 0px 0px;
-            border-radius: 3%;
+            @extend %img-etiqueta;
         }
         .card-body{
             .card-title{
-                font-size: 15px;
+                font-size: $producto;
             }
             .card-text{
-                font-size: 14px;
+                font-size: $precio;
             }
         }
     }
     .tarj3{
-        width:270px;
-        height: 560px;
-        border: 1px solid #000000;
-        border-radius: 3%;
-        background-color: white;
-        &:hover{
-            -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-        }
+        @extend %borde-tarjeta;
         .card-img-top{
-            width: 250px;
-            height: 420px;
-            margin: 10px 0px 0px 0px;
-            border-radius: 3%;
+            @extend %img-etiqueta;
         }
         .card-body{
             .card-title{
-                font-size: 15px;
+                font-size: $producto;
             }
             .card-text{
-                font-size: 14px;
+                font-size: $precio;
             }
         }
     }
     .tarj4{
-        width:270px;
-        height: 560px;
-        border: 1px solid #000000;
-        border-radius: 3%;
-        background-color: white;
-        &:hover{
-            -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-        }
+        @extend %borde-tarjeta;
         .card-img-top{
-            width: 250px;
-            height: 420px;
-            margin: 10px 0px 0px 0px;
-            border-radius: 3%;
+            @extend %img-etiqueta;
         }
         .card-body{
             .card-title{
-                font-size: 15px;
+                font-size: $producto;
             }
             .card-text{
-                font-size: 14px;
+                font-size: $precio;
             }
         }
     }
     .tarj5{
-        width:270px;
-        height: 560px;
-        border: 1px solid #000000;
-        border-radius: 3%;
-        background-color: white;
-        &:hover{
-            -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-        }
+        @extend %borde-tarjeta;
         .card-img-top{
-            width: 250px;
-            height: 420px;
-            margin: 10px 0px 0px 0px;
-            border-radius: 3%;
+            @extend %img-etiqueta;
         }
         .card-body{
             .card-title{
-                font-size: 15px;
+                font-size: $producto;
             }
             .card-text{
-                font-size: 14px;
+                font-size: $precio;
             }
         }
     }
     .tarj6{
-        width:270px;
-        height: 560px;
-        border: 1px solid #000000;
-        border-radius: 3%;
-        background-color: white;
-        &:hover{
-            -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-        }
+        @extend %borde-tarjeta;
         .card-img-top{
-            width: 250px;
-            height: 420px;
-            margin: 10px 0px 0px 0px;
-            border-radius: 3%;
+            @extend %img-etiqueta;
         }
         .card-body{
             .card-title{
-                font-size: 15px;
+                font-size: $producto;
             }
             .card-text{
-                font-size: 14px;
+                font-size: $precio;
             }
         }
     }
     .tarj7{
-        width:270px;
-        height: 560px;
-        border: 1px solid #000000;
-        border-radius: 3%;
-        background-color: white;
-        &:hover{
-            -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-        }
+        @extend %borde-tarjeta;
         .card-img-top{
-            width: 250px;
-            height: 420px;
-            margin: 10px 0px 0px 0px;
-            border-radius: 3%;
+            @extend %img-etiqueta;
         }
         .card-body{
             .card-title{
-                font-size: 15px;
+                font-size: $producto;
             }
             .card-text{
-                font-size: 14px;
+                font-size: $precio;
             }
         }
     }
     .tarj8{
-        width:270px;
-        height: 560px;
-        border: 1px solid #000000;
-        border-radius: 3%;
-        background-color: white;
-        &:hover{
-            -moz-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-            box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
-        }
+        @extend %borde-tarjeta;
         .card-img-top{
-            width: 250px;
-            height: 420px;
-            margin: 10px 0px 0px 0px;
-            border-radius: 3%;
+            @extend %img-etiqueta;
         }
         .card-body{
             .card-title{
-                font-size: 15px;
+                font-size: $producto;
             }
             .card-text{
-                font-size: 14px;
+                font-size: $precio;
             }
         }
     }
-}
+
