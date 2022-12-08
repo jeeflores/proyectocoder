@@ -1,6 +1,7 @@
-
+@import "../base/variables";
 .pie{
     grid-area: footer;
+    font-family: $fuente-principal;
     background-color:rgb(196, 157, 233) ;
     border: 2px solid rgb(165,97,225);
     width: 100%;

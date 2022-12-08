@@ -1,11 +1,11 @@
 @import "../base/variables";
 
-
+//INDEX//
 .contenido {
     grid-area: main;
     background-color: $fondo-main;
+    font-family: $fuente-principal;
     .bienvenida{
-        font-family: $fuente-principal;
         display: flex;
         justify-content: center;
         margin: 3%;
@@ -41,6 +41,7 @@
     }
 }
 
+//COMO COMPRAR//
 .acordion-e-iconos{
     .accordion{
         display: flex;
@@ -80,7 +81,10 @@
         }
 }
 
+
+//PRODUCTOS//
 .tarjeta{
+    grid-area: main;
     @include flex(flex, space-around, center);
     flex-wrap: wrap;
     background-color: $fondo-main;
@@ -198,3 +202,19 @@
         }
     }
 
+//NOSOTROS//
+
+
+.nosotros {
+    grid-area: main;
+    .quienes-somos{
+        margin: 50px;
+        h2{
+            text-align: center;
+        }
+    }
+    .ubicacion {
+        @include flex(flex,space-around,center);
+    }
+
+}

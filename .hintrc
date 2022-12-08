@@ -3,12 +3,19 @@
     "development"
   ],
   "hints": {
-    "no-inline-styles": "off",
-    "disown-opener": "off",
-    "axe/name-role-value": [
+    "compat-api/html": [
       "default",
       {
-        "link-name": "off"
+        "ignore": [
+          "iframe[loading]"
+        ]
+      }
+    ],
+    "no-inline-styles": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "frame-title": "off"
       }
     ]
   }

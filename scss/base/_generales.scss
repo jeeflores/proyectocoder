@@ -1,3 +1,5 @@
+@import "./base/variables";
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 .grid-contenedor{ 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $fuente-principal;
     display: grid;
     grid-template-columns: 4fr;
     grid-template-rows: 150px 35px 850px 170px;
@@ -18,7 +20,7 @@
 
 
 .grid-contenedor2{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $fuente-principal;
     display: grid;
     grid-template-columns: 4fr;
     grid-template-rows: 150px 35px 810px 170px;
@@ -29,8 +31,8 @@
     "footer footer footer footer"
 }
 
-.grid-productos{
-    font-family: 'Times New Roman', Times, serif;
+.grid-productos {
+    font-family: $fuente-principal;
     display: grid;
     grid-template-columns: 4fr;
     grid-template-rows: 150px 35px 1300px 170px;
@@ -38,5 +40,17 @@
     "header header header header"
     "nav nav nav nav"
     "main main main main"
-    "footer footer footer footer"
+    "footer footer footer footer";
+}
+
+.grid-nosotros {
+    font-family: $fuente-principal;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 150px 35px 600px 170px;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
 }

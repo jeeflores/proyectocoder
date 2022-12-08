@@ -1,3 +1,5 @@
+
+
 @media screen and (max-width:768px) {
 
     .grid-contenedor {
@@ -9,13 +11,11 @@
             "header header"
             "nav nav"
             "main main"
-            "footer footer"
-        ;
+            "footer footer";
     }
 
     .encabezado a h1 {
         font-size: 60px;
-
         &:hover {
             font-size: 63px;
         }
@@ -31,15 +31,42 @@
     .grid-contenedor2 {
         font-family: 'Times New Roman', Times, serif;
         display: grid;
-        grid-template-columns: 4fr;
+        grid-template-columns: 2fr;
         grid-template-rows: 145px 35px 750px 170px;
         grid-template-areas:
-            "header header header header"
-            "nav nav nav nav"
-            "main main main main"
-            "footer footer footer footer"
+            "header header"
+            "nav nav"
+            "main main"
+            "footer footer"
     }
+
+    .grid-productos{
+        font-family: 'Times New Roman', Times, serif;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 143.5px 35px 2450px 170px;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer"
+        }
+
+        .grid-nosotros {
+            font-family: $fuente-principal;
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: 143.5px 35px 600px 170px;
+            grid-template-areas: 
+            "header header"
+            "nav nav"
+            "main main"
+            "footer footer";
+        }
 }
+
+
+
 
 @media screen and (max-width:425px) {
 
@@ -112,4 +139,18 @@
         height: 80px;
         margin: 25px;
     }
+
+    .grid-productos{
+        font-family: 'Times New Roman', Times, serif;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 143.5px 130px 5000px 170px;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer"
+        }
+
+        
 }
