@@ -49,6 +49,13 @@
   grid-template-rows: 150px 35px 600px 170px;
   grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer"; }
 
+.grid-registro {
+  font-family: "Times New Roman", Times, serif;
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-template-rows: 150px 35px 700px 170px;
+  grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer"; }
+
 .tarjeta .tarj1, .tarj2, .tarj3, .tarj4, .tarj5, .tarj6, .tarj7, .tarj8 {
   width: 270px;
   height: 560px;
@@ -256,7 +263,16 @@
   .nosotros .ubicacion {
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
+
+.formulario {
+  grid-area: main;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #eee6f5; }
 
 .tarjeta .tarj1, .tarj2, .tarj3, .tarj4, .tarj5, .tarj6, .tarj7, .tarj8 {
   width: 270px;
@@ -322,6 +338,12 @@
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 143.5px 35px 600px 170px;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
+  .grid-registro {
+    font-family: "Times New Roman", Times, serif;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 143.5px 35px 700px 170px;
     grid-template-areas: "header header" "nav nav" "main main" "footer footer"; } }
 
 @media screen and (max-width: 425px) {
@@ -373,4 +395,16 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 143.5px 130px 5000px 170px;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  .grid-nosotros {
+    font-family: "Times New Roman", Times, serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 143.5px 130px 1000px 170px;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  .grid-registro {
+    font-family: "Times New Roman", Times, serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 143.5px 130px 700px 170px;
     grid-template-areas: "header" "nav" "main" "footer"; } }

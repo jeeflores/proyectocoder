@@ -54,3 +54,15 @@
     "main main main main"
     "footer footer footer footer";
 }
+
+.grid-registro {
+    font-family: $fuente-principal;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 150px 35px 700px 170px;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+}
