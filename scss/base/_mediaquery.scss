@@ -75,6 +75,18 @@
             "main main"
             "footer footer";
         }
+
+        .grid-carrito {
+            font-family: $fuente-principal;
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: 143.5px 35px 810px 170px;
+            grid-template-areas: 
+            "header header"
+            "nav nav nav nav"
+            "main main"
+            "footer footer"
+        }
 }
 
 
@@ -187,4 +199,16 @@
             "nav"
             "main"
             "footer";}
+
+            .grid-carrito {
+                font-family: $fuente-principal;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 143.5px 130px 400px 170px;
+                grid-template-areas: 
+                "header"
+                "nav"
+                "main"
+                "footer"
+            }
 }

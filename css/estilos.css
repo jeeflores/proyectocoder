@@ -56,6 +56,13 @@
   grid-template-rows: 150px 35px 700px 170px;
   grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer"; }
 
+.grid-carrito {
+  font-family: "Times New Roman", Times, serif;
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-template-rows: 150px 35px 810px 170px;
+  grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer"; }
+
 .tarjeta .tarj1, .tarj2, .tarj3, .tarj4, .tarj5, .tarj6, .tarj7, .tarj8 {
   width: 270px;
   height: 560px;
@@ -274,6 +281,9 @@
   flex-wrap: wrap;
   background-color: #eee6f5; }
 
+.compras {
+  grid-area: main; }
+
 .tarjeta .tarj1, .tarj2, .tarj3, .tarj4, .tarj5, .tarj6, .tarj7, .tarj8 {
   width: 270px;
   height: 560px;
@@ -344,7 +354,13 @@
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 143.5px 35px 700px 170px;
-    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; } }
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
+  .grid-carrito {
+    font-family: "Times New Roman", Times, serif;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 143.5px 35px 810px 170px;
+    grid-template-areas: "header header" "nav nav nav nav" "main main" "footer footer"; } }
 
 @media screen and (max-width: 425px) {
   .grid-contenedor {
@@ -407,4 +423,10 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 143.5px 130px 700px 170px;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  .grid-carrito {
+    font-family: "Times New Roman", Times, serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 143.5px 130px 400px 170px;
     grid-template-areas: "header" "nav" "main" "footer"; } }

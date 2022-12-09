@@ -66,3 +66,15 @@
     "main main main main"
     "footer footer footer footer";
 }
+
+.grid-carrito {
+    font-family: $fuente-principal;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 150px 35px 810px 170px;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer"
+}
