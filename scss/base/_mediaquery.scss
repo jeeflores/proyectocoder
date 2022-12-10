@@ -113,6 +113,7 @@
         justify-content: center;
         align-items: center;
         padding-left: 0px;
+        margin-bottom: 1rem;
     }
 
     .encabezado a h1 {
@@ -180,12 +181,18 @@
             font-family: $fuente-principal;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 143.5px 130px 1000px 170px;
+            grid-template-rows: 143.5px 130px 1100px 170px;
             grid-template-areas: 
             "header"
             "nav"
             "main"
             "footer";
+            .ubicacion{
+                .mapa {
+                    width: 300;
+                    height: 200;
+                }
+            }
         }
 
 
@@ -198,7 +205,18 @@
             "header"
             "nav"
             "main"
-            "footer";}
+            "footer";
+            .ingresa{
+                border: 1px solid #a561e1;
+                border-radius: 3%;
+                padding: 15px;
+            }
+            .registrate{
+                border: 1px solid #a561e1;
+                border-radius: 3%;
+                padding: 15px;
+            }
+        }
 
             .grid-carrito {
                 font-family: $fuente-principal;

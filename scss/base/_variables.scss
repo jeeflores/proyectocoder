@@ -27,6 +27,7 @@ $fondo-main: #eee6f5;
     border-radius: 3%;
 }
 
+
 @mixin flex ($flex,$justify,$aling) {
     display: $flex;
     justify-content: $justify;

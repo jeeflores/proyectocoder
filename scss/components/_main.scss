@@ -212,10 +212,28 @@
         h2{
             text-align: center;
         }
+        p{
+            text-align: center
+        }
     }
     .ubicacion {
         @include flex(flex,space-around,center);
         flex-wrap: wrap;
+        .mapa{
+            width: 400;
+            height: 300;
+        }
+        .info{
+            font-family: $fuente-principal;
+            margin: 25px;
+            h4{
+                font-size: 16px;
+                font-weight: bold;
+                h5{
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }
 
@@ -223,9 +241,14 @@
 
 .formulario {
     grid-area: main;
-    @include flex(flex,space-around,center);
+    @include flex(flex,space-evenly,center);
     flex-wrap: wrap;
     background-color: $fondo-main;
+    .registrate {
+        .btn{
+            margin: 6px;
+        }
+    }
 }
 
 
