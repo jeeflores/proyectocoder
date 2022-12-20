@@ -181,7 +181,7 @@
             font-family: $fuente-principal;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 143.5px 130px 1100px 170px;
+            grid-template-rows: 143.5px 130px 1200px 170px;
             grid-template-areas: 
             "header"
             "nav"
@@ -229,4 +229,24 @@
                 "main"
                 "footer"
             }
+}
+
+@media screen and (max-width:425px) {
+    .grid-nosotros {
+        font-family: $fuente-principal;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 143.5px 130px 1300px 170px;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+        .ubicacion{
+            .mapa {
+                width: 300;
+                height: 200;
+            }
+        }
+    }
 }
